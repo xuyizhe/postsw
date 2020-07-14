@@ -20,9 +20,6 @@
   "bin": {
     "postsw": "index.js"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "prepublish": "npm run test",
     "test": "npm run test:cdn",
