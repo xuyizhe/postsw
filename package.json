@@ -1,0 +1,42 @@
+{
+  "name": "postsw",
+  "version": "0.0.0",
+  "description": "Simple post-processing Service Worker.",
+  "author": "Yizhe Xu <barrenbass@gmail.com>",
+  "keywords": [
+    "Service Worker",
+    "Cache"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuyizhe/postsw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xuyizhe/postsw/issues"
+  },
+  "homepage": "https://github.com/xuyizhe/postsw#readme",
+  "bin": {
+    "postsw": "index.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "prepublish": "npm run test",
+    "test": "npm run test:cdn",
+    "test:cdn": "node . ./tests -p",
+    "test:local": "node . ./tests -p --local"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "fs-extra": "^8.1.0",
+    "meow": "^5.0.0",
+    "workbox-build": "^4.3.1",
+    "workbox-cdn": "^4.3.1"
+  }
+}
