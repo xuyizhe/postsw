@@ -21,14 +21,14 @@ if ('serviceWorker' in navigator) {
 
 Or use with [`register-service-worker`](https://www.npmjs.com/package/register-service-worker)
 
-### Usage
+### Run
 ```shell
 postsw ./your_project_dist_dir
 
 # postsw --help
 ```
 
-### 3. Server configuration(optional)
+### Server configuration(optional)
 ```shell
 location / {
   index /index.html
