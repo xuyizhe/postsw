@@ -1,6 +1,6 @@
 {
   "name": "postsw",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple post-processing Service Worker.",
   "author": "Yizhe Xu <barrenbass@gmail.com>",
   "keywords": [
