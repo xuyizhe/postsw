@@ -64,3 +64,5 @@ typings/
 
 tests/workbox
 tests/sw.js
+
+.npmrc

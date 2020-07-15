@@ -21,7 +21,7 @@ if ('serviceWorker' in navigator) {
 
 Or use with [`register-service-worker`](https://www.npmjs.com/package/register-service-worker)
 
-### Run
+### Generate `sw.js`
 ```shell
 postsw ./your_project_dist_dir
 
